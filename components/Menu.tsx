@@ -18,13 +18,13 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Chatbot",
-    href: "/chat.html",
+    href: "/component-ai/chat.html",
     description:
       "Write stories, messages, or programming code",
   },
   {
     title: "Recommender",
-    href: "/recommend.html",
+    href: "/component-ai/recommend.html",
     description:
       "Find what people are looking for among a growing number of options",
   },
