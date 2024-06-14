@@ -1,8 +1,16 @@
 # Component AI
 
+This project enables students and companies to rapidly create new UI components to test their machine learning models, offering significant advantages in the development process. By providing a streamlined method for UI creation, we can support users quickly in prototyping and iterating their designs. 
+
+## Feature request
+
+- Virtual Try On Component
+- Search Text in PDF Component
+- Video Component
+
 ## Getting Started
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
