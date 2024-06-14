@@ -26,5 +26,13 @@
 
 ![image](https://github.com/hughiephan/component-ai/assets/16631121/a3ff473b-eed8-4e7e-ace8-1ac9b0566461)
 
+### Recommender for Cart
+
+![image](https://github.com/hughiephan/component-ai/assets/16631121/a118cd55-8b11-4899-96f0-4dbf4305598d)
+
+### Recommender for E-commerce
+
+![image](https://github.com/hughiephan/component-ai/assets/16631121/7cbc8357-999a-45f8-97aa-25a99ce1434a)
+
 ## Reference
 - https://themeforest.net/item/scribblerai-ai-content-generator-dashboard-and-user-app-html-template/51010846
