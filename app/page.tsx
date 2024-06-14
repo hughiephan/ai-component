@@ -1,10 +1,9 @@
-import Image from "next/image";
-import { Button } from "../components/button"
+import { Menu } from "../components/Menu"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Button> Component AI !!</Button>
+    <main className="flex flex-col items-center justify-between p-24">
+      <Menu> </Menu>
     </main>
   );
 }
