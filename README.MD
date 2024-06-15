@@ -34,6 +34,10 @@ TBD
 
 ## Full Component
 
+### Text Highlight
+
+![image](https://github.com/hughiephan/component-ai/assets/16631121/44b104da-4822-44e8-b14d-3e1c625022f1)
+
 ### Image Generation
 
 ![image](https://github.com/hughiephan/component-ai/assets/16631121/d4851f7e-26e9-49d1-ad91-262e474f3cce)
