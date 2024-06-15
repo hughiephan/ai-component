@@ -30,7 +30,7 @@ const components: { title: string; href: string; description: string }[] = [
   },
   {
     title: "Text Highlight",
-    href: "/texthighlight",
+    href: "/component-ai/texthighlight",
     description:
       "Super simple utility for highlighting certain words in text",
   },
