@@ -28,6 +28,12 @@ const components: { title: string; href: string; description: string }[] = [
     description:
       "Find what people are looking for among a growing number of options",
   },
+  {
+    title: "Text Highlight",
+    href: "/texthighlight",
+    description:
+      "Super simple utility for highlighting certain words in text",
+  },
 ]
 
 export function Menu() {
