@@ -18,19 +18,19 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Chatbot",
-    href: "/component-ai/chat.html",
+    href: "/chat.html",
     description:
       "Write stories, messages, or programming code",
   },
   {
     title: "Recommender",
-    href: "/component-ai/recommend.html",
+    href: "/recommend.html",
     description:
       "Find what people are looking for among a growing number of options",
   },
   {
     title: "Text Highlight",
-    href: "/component-ai/texthighlight",
+    href: "/texthighlight",
     description:
       "Super simple utility for highlighting certain words in text",
   },
