@@ -8,8 +8,13 @@ This project enables students and companies to rapidly create new UI components 
 
 ![img](https://preview.redd.it/idm-vton-virtual-try-on-is-just-another-level-extreme-v0-ra3d6y2tdxwc1.png?width=640&crop=smart&auto=webp&s=42fb826f419cbc0213ba267430dd41aaf73cfda6)
 
+- InPainting Component
+
+https://github.com/hughiephan/component-ai/assets/16631121/0f1211f6-2a3e-47c8-8aae-9ccdd933329e
+
 - Search Text in PDF Component
-- Video Component
+
+![image](https://github.com/hughiephan/component-ai/assets/16631121/e5585794-ca96-4f4a-8955-beabe336dfc1)
 
 - Dose Detective Component:
 
@@ -57,5 +62,5 @@ TBD
 
 ![image](https://github.com/hughiephan/component-ai/assets/16631121/7cbc8357-999a-45f8-97aa-25a99ce1434a)
 
-## Reference
+## Readmore
 - https://themeforest.net/item/scribblerai-ai-content-generator-dashboard-and-user-app-html-template/51010846
