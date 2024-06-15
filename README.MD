@@ -1,4 +1,4 @@
-# Component AI
+# AI Component
 
 This project enables students and companies to rapidly create new UI components to test their machine learning models, offering significant advantages in the development process. By providing a streamlined method for UI creation, we can support users quickly in prototyping and iterating their designs. 
 
