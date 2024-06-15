@@ -6,7 +6,7 @@ This project enables students and companies to rapidly create new UI components 
 
 - Virtual Try On Component
 
-https://preview.redd.it/idm-vton-virtual-try-on-is-just-another-level-extreme-v0-ra3d6y2tdxwc1.png?width=640&crop=smart&auto=webp&s=42fb826f419cbc0213ba267430dd41aaf73cfda6
+![img](https://preview.redd.it/idm-vton-virtual-try-on-is-just-another-level-extreme-v0-ra3d6y2tdxwc1.png?width=640&crop=smart&auto=webp&s=42fb826f419cbc0213ba267430dd41aaf73cfda6)
 
 - Search Text in PDF Component
 - Video Component
