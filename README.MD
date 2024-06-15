@@ -9,7 +9,7 @@ This project enables students and companies to rapidly create new UI components 
 - Video Component
 
 
-![video](https://github.com/hughiephan/component-ai/assets/16631121/10d9616d-5ebe-4f57-9b49-633d2b2e2f04)
+https://github.com/hughiephan/component-ai/assets/16631121/10d9616d-5ebe-4f57-9b49-633d2b2e2f04
 
 
 ## Getting Started
