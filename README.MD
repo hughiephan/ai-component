@@ -32,7 +32,7 @@ npm run dev
 
 TBD
 
-## Full Component
+## Theme
 
 ### Text Highlight
 

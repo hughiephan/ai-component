@@ -3,7 +3,7 @@
 // Based on: https://codepen.io/noirsociety/pen/QWZoyoz
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Menu } from "../../components/Menu"
+import { Menu } from "../../components/basic/Menu"
 import './page.css'
 
 export default function TextHighlight() {

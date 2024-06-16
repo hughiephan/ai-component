@@ -3,7 +3,7 @@
 // Based on: https://dribbble.com/shots/22823385-AI-Powered-OCR-Software
 
 import React, { useState } from 'react';
-import { Menu } from "../../components/Menu"
+import { Menu } from "../../components/basic/Menu"
 import './page.css'; // Include your CSS file
 
 export default function OCR() {

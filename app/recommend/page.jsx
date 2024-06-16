@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import './page.css';
-import { Menu } from "../../components/Menu"
+import { Menu } from "../../components/basic/Menu"
 
 const allItems = [
     'ED Tulip', 'Felicia Tank', 'Bracelet Tom', 'DOMINIC', 'Bientot graphic tee', 'Inca jumper', 'Wendy jersey top',

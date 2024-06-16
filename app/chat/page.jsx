@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import './page.css'
-import { Menu } from "../../components/Menu"
+import { Menu } from "../../components/basic/Menu"
 
 export default function Chat() {
     const [messages, setMessages] = useState([]);

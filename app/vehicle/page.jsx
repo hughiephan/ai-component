@@ -1,7 +1,7 @@
 import React from 'react'
 import FuelEconomyCalculator from './fuel'
 import RentACarForm from './rent'
-import { Menu } from "../../components/Menu"
+import { Menu } from "../../components/basic/Menu"
 import './fuel.css'
 import './rent.css'
 
