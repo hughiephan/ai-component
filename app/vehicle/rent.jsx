@@ -28,7 +28,7 @@ const RentACarForm = () => {
           </div>
           <div className="conductor">
             <input type="checkbox"/>
-            <label>The driver's age between 30 and 65? <i className="fa-solid fa-circle-info"></i></label>
+            <label>The drivers age between 30 and 65? <i className="fa-solid fa-circle-info"></i></label>
           </div>
           <input type="submit" value="Search" />
         </form>
