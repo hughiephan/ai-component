@@ -40,6 +40,12 @@ const components: { title: string; href: string; description: string }[] = [
     description:
       "Convert non-searchable PDF documents into searchable and selectable text in seconds",
   },
+  {
+    title: "Vehicle",
+    href: "/vehicle",
+    description:
+      "Vehicle renting and gas calculation",
+  },
 ]
 
 export function Menu() {
