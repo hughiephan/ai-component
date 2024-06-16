@@ -47,6 +47,8 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ]
 
+const storybookUrl = process.env.NEXT_PUBLIC_STORYBOOK_URL || "storybook";
+
 export function Menu() {
   return (
     <NavigationMenu>
@@ -55,6 +57,13 @@ export function Menu() {
           <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Main
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href={storybookUrl} legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Storybook
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
