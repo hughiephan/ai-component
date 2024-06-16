@@ -14,6 +14,8 @@ https://github.com/hughiephan/component-ai/assets/16631121/0f1211f6-2a3e-47c8-8a
 
 - Search Text in PDF Component
 
+![image](https://github.com/hughiephan/ai-component/assets/16631121/56a7d792-372f-4a3c-bb24-c84a050ed540)
+
 ![image](https://github.com/hughiephan/component-ai/assets/16631121/e5585794-ca96-4f4a-8955-beabe336dfc1)
 
 - Dose Detective Component:
