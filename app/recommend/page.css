@@ -1,0 +1,104 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Source Sans Pro", "Helvetica", sans-serif;
+  letter-spacing: 1.5px;
+}
+.app {
+  position: relative;
+  left: 50%;
+  display: inline-block;
+  max-width: 100%;
+  width: 400px;
+  margin: 50px auto 25px;
+  padding: 20px 0;
+  transform: translateX(-50%);
+}
+.header {
+  display: flex;
+  align-items: flex-start;
+  padding: 30px 30px 45px;
+  background: #fff;
+}
+.logo-wrapper {
+  flex: 1 0 10%;
+}
+.logo {
+  display: block;
+  width: 75px;
+  height: auto;
+  margin-left: 15px;
+}
+.header-info {
+  flex: 1 0 50%;
+}
+.brand,
+.clothes {
+  display: block;
+  font-size: 19px;
+  color: #aaa;
+  font-weight: 300;
+}
+.subheader-wrapper {
+  background: #fff;
+  padding-bottom: 20px;
+}
+.subheader {
+  padding: 0 45px 0 40px;
+  border-left: 5px solid #d63333;
+}
+.subheader-title {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+.cart {
+  display: block;
+  padding: 25px 30px 10px;
+}
+.cart-title {
+  display: block;
+  margin-top: 0;
+  text-align: center;
+}
+.cart-list {
+  margin: 0;
+  padding: 0 15px;
+  list-style: none;
+}
+.cart-item {
+  display: block;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-top: 2px dashed #aaa;
+  font-size: 18px;
+}
+.cart-item:first-child {
+  border-top: 0;
+}
+.index {
+  padding-right: 15px;
+  color: #aaa;
+  font-weight: 300;
+}
+.item-name {
+  color: #aaa;
+  font-weight: 300;
+}
+.footer {
+  position: relative;
+  padding: 30px 20px;
+  border-top: 2px dashed #d63333;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.borderless {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  margin-left: -4px;
+}

@@ -25,7 +25,9 @@ export default function OCR() {
 
     return (
         <div>
-            <Menu> </Menu>
+            <main className="flex flex-col items-center justify-center p-24">
+                <Menu> </Menu>
+            </main>
             <div className="app">
                 <div className="sidebar">
                     <div className="last-extraction-results">

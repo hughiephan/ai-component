@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Based on: https://codepen.io/james-daw/pen/dEPpbE
+
 const FuelEconomyCalculator = () => {
   return (
     <div className="column-1">
