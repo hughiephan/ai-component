@@ -1,0 +1,90 @@
+.app {
+    display: flex;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .main-content {
+    width: 50%;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .performance, .document-types {
+    width: 25%;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .last-extraction-results ul,
+  .platform-tips ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .last-extraction-results li,
+  .platform-tips li {
+    margin-bottom: 10px;
+  }
+  
+  .last-extraction-results a,
+  .platform-tips a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .document-preview img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .document-settings label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .document-settings select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  .document-settings button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .document-settings button:hover {
+    background-color: #0056b3;
+  }
+  
+  .performance-chart img {
+    width: 100%;
+  }
+  
+  .document-types ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .document-types li {
+    margin-bottom: 10px;
+  }
+  

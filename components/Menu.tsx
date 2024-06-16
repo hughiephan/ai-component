@@ -34,12 +34,25 @@ const components: { title: string; href: string; description: string }[] = [
     description:
       "Super simple utility for highlighting certain words in text",
   },
+  {
+    title: "OCR",
+    href: "/ocr",
+    description:
+      "Convert non-searchable PDF documents into searchable and selectable text in seconds",
+  },
 ]
 
 export function Menu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
+        <NavigationMenuItem>
+          <Link href="/" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Main
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Full Components</NavigationMenuTrigger>
           <NavigationMenuContent>
