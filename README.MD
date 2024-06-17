@@ -28,6 +28,12 @@ Run the development server:
 npm run dev
 ```
 
+To run storybook:
+
+```bash
+npm run storybook
+```
+
 ## Component
 
 TBD
