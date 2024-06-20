@@ -1,11 +1,13 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import { useDropzone } from 'react-dropzone';
+import * as AspectRatio from '@radix-ui/react-aspect-ratio';
 
 export interface FileUploadProps {
+  ratio: number;
   onDrop: (files: File[]) => void;
 }
 
-const FileUpload = ({ onDrop }: FileUploadProps): ReactElement => {
+const FileUpload = ({ ratio, onDrop }: FileUploadProps): ReactElement => {
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
     multiple: false,
@@ -15,9 +17,12 @@ const FileUpload = ({ onDrop }: FileUploadProps): ReactElement => {
   });
 
   return (
-    <div {...getRootProps()} style={{ border: '2px dashed #ccc', padding: '20px', textAlign: 'center' }}>
-      <input {...getInputProps()} />
-      <p>Drop Image Here or Click to Upload</p>
+    <div {...getRootProps()} style={{ border: '2px dashed #ccc', padding: '20px', textAlign: 'center' }} className="Container">
+      <AspectRatio.Root ratio={ratio}>
+        <input {...getInputProps()} />
+        <button>Upload</button>
+        <p>Drop Image Here or Click to Upload</p>
+      </AspectRatio.Root>
     </div>
   );
 };
