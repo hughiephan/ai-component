@@ -45,6 +45,12 @@ const components: { title: string; href: string; description: string }[] = [
     description:
       "Vehicle renting and gas calculation",
   },
+  {
+    title: "Cite Intetion",
+    href: "/citeintention",
+    description:
+      "Finding the important concept of research papers",
+  },
 ]
 
 const storybookUrl = process.env.NEXT_PUBLIC_STORYBOOK_URL || "storybook";
