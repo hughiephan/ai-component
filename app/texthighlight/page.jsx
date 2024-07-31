@@ -4,6 +4,9 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { Menu } from "../../components/basic/Menu"
+import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
+import { Send } from "lucide-react"
 import './page.css'
 
 export default function TextHighlight() {
@@ -28,16 +31,6 @@ export default function TextHighlight() {
     fetchContent();
   }, []);
 
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-  };
-
-  const handleClear = () => {
-    setInputValue('');
-    inputRef.current.focus();
-    document.querySelectorAll('.highlight').forEach((el) => el.classList.remove('highlight'));
-  };
-
   const handleKeyDown = (e) => {
     if (e.keyCode === 13) highlight();
   };
@@ -50,37 +43,44 @@ export default function TextHighlight() {
     setContent(markup);
   };
 
-  return (
-    <main className='highliter'>
-      <Menu> </Menu>
+  const [input, setInput] = React.useState("")
+  const inputLength = input.trim().length
 
-      <div className='highliter-interface'>
-        <input 
-          type='text' 
-          className='highliter-input' 
-          placeholder='Search' 
-          value={inputValue}
-          onChange={handleInputChange}
-          onKeyDown={handleKeyDown}
-          ref={inputRef}
+  return (
+    <div>
+      <main className="flex flex-col items-center justify-center p-24">
+        <Menu> </Menu>
+      </main>
+      <div className='highliter'>
+        <div className='highliter-interface'>
+          <Input
+            id="message"
+            placeholder="Type your message..."
+            className="highliter-input"
+            autoComplete="off"
+            value={input}
+            onChange={(event) => {
+              setInput(event.target.value);
+              setInputValue(event.target.value);
+            }}
+            onKeyDown={handleKeyDown}
+            ref={inputRef}
+          />
+          <Button
+            style={{ marginLeft: "10px" }}
+            type="submit"
+            size="icon"
+            disabled={inputLength === 0}
+            onClick={highlight}
+          >
+            <Send className="h-4 w-4" />
+          </Button>
+        </div>
+        <p
+          className='highliter-content'
+          dangerouslySetInnerHTML={{ __html: content }}
         />
-        <button 
-          className={`highliter-clear ${inputValue ? 'visible' : ''}`} 
-          onClick={handleClear}
-        >
-          x
-        </button>
-        <button 
-          className='highliter-search' 
-          onClick={highlight}
-        >
-          🔍
-        </button>
       </div>
-      <p 
-        className='highliter-content' 
-        dangerouslySetInnerHTML={{ __html: content }}
-      />
-    </main>
+    </div>
   );
 };

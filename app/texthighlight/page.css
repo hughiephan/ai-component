@@ -1,22 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: helvetica, sans-serif;
-    font-weight: 100;
-}
-
-body {
-    height: 100vh;
-    display: grid;
-    place-items: center;
-}
-
 .highliter * {
     font-size: 0.75rem;
 }
 
 .highliter {
+    padding-top: 50px;
+    margin: auto;
     position: relative;
     width: min-content;
 }

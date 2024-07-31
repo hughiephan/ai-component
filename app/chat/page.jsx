@@ -30,7 +30,6 @@ export default function Chat() {
             </main>
 
             <div className="container">
-
                 <div className="header">
                     <img src="https://cdn-icons-png.flaticon.com/512/2233/2233922.png" alt="" className="avatar" />
                     <h3>Chatbot</h3>

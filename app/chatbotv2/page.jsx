@@ -11,15 +11,16 @@ import {
 } from "@/components/ui/card"
 import { Menu } from "/components/basic/Menu"
 import { Input } from "@/components/ui/input"
+import "./page.css"
 export default function CiteIntention() {
   const [messages, setMessages] = React.useState([
     {
       role: "agent",
-      content: "Hi, how can I help you today?",
+      content: "Hi, what papers are you working on?",
     },
     {
       role: "user",
-      content: "Hey, I'm having trouble with my account.",
+      content: "Hey, I'm having trouble with Transformer paper",
     },
     {
       role: "agent",
@@ -27,7 +28,7 @@ export default function CiteIntention() {
     },
     {
       role: "user",
-      content: "I can't log in.",
+      content: "The architecture of the paper is unclear",
     },
   ])
   const [input, setInput] = React.useState("")
@@ -38,12 +39,12 @@ export default function CiteIntention() {
       <main className="flex flex-col items-center justify-center p-24">
         <Menu> </Menu>
       </main>
-      <Card>
+      <Card style={{margin: "auto", marginTop:"50px", width: "500px"}}>
         <CardContent>
           <div className="space-y-4">
             {messages.map((message, index) => (
               <div
-                style={{marginTop: "50px"}}
+                style={{marginTop: "30px"}}
                 key={index}
                 className={cn(
                   "flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm",
@@ -81,9 +82,8 @@ export default function CiteIntention() {
               value={input}
               onChange={(event) => setInput(event.target.value)}
             />
-            <Button type="submit" size="icon" disabled={inputLength === 0}>
+            <Button style={{marginLeft: "10px"}} type="submit" size="icon" disabled={inputLength === 0}>
               <Send className="h-4 w-4" />
-              <span className="sr-only">Send</span>
             </Button>
           </form>
         </CardFooter>

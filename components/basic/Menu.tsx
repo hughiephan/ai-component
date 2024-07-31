@@ -22,6 +22,12 @@ const components: { title: string; href: string; description: string }[] = [
       "Write stories, messages, or programming code",
   },
   {
+    title: "Chatbot V2",
+    href: "/chatbotv2",
+    description:
+      "Conversational AI",
+  },
+  {
     title: "Recommender",
     href: "/recommend",
     description:
@@ -44,12 +50,6 @@ const components: { title: string; href: string; description: string }[] = [
     href: "/vehicle",
     description:
       "Vehicle renting and gas calculation",
-  },
-  {
-    title: "Cite Intetion",
-    href: "/citeintention",
-    description:
-      "Finding the important concept of research papers",
   },
 ]
 

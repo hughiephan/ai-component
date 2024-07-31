@@ -1,0 +1,7 @@
+.ml-auto {
+    margin-left: auto;
+}
+
+.bg-muted {
+    background-color: hsl(var(--muted));
+}
