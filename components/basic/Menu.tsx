@@ -51,6 +51,12 @@ const components: { title: string; href: string; description: string }[] = [
     description:
       "Vehicle renting and gas calculation",
   },
+  {
+    title: "English Learning Platform",
+    href: "/english",
+    description:
+      "Speech check, Conversational AI",
+  }
 ]
 
 const storybookUrl = process.env.NEXT_PUBLIC_STORYBOOK_URL || "storybook";
