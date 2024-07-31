@@ -862,7 +862,7 @@ export default function English() {
                       content={<ChartTooltipContent hideLabel />}
                       formatter={(value) => (
                         <div className="flex min-w-[120px] items-center text-xs text-muted-foreground">
-                          Time in bed
+                          Learning time
                           <div className="ml-auto flex items-baseline gap-0.5 font-mono font-medium tabular-nums text-foreground">
                             {value}
                             <span className="font-normal text-muted-foreground">
