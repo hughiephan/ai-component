@@ -1,0 +1,27 @@
+.coming-soon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  animation: fadeIn 1000ms ease;
+  -webkit-animation: fadeIn 1000ms ease;
+}
+
+.coming-soon h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.coming-soon .dot {
+  color: #4FEBFE;
+}
+
+.coming-soon p {
+  text-align: center;
+  margin: 18px;
+  font-family: 'Muli', sans-serif;
+  font-weight: normal;
+}
