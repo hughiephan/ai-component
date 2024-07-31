@@ -693,7 +693,7 @@ export default function English() {
               <CardHeader className="p-4 pb-0">
                 <CardTitle>Active Energy</CardTitle>
                 <CardDescription>
-                  You're burning an average of 754 calories per lesson.
+                  You are burning an average of 754 calories per lesson.
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex flex-row items-baseline gap-4 p-4 pt-2">
