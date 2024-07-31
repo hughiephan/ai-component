@@ -17,27 +17,21 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Chatbot",
-    href: "/chat",
-    description:
-      "Write stories, messages, or programming code",
-  },
-  {
-    title: "Chatbot V2",
-    href: "/chatbotv2",
+    href: "/chatbot",
     description:
       "Conversational AI",
   },
   {
-    title: "Recommender",
-    href: "/recommend",
+    title: "Shop",
+    href: "/shop",
     description:
-      "Find what people are looking for among a growing number of options",
+      "E-commerce shop",
   },
   {
-    title: "Text Highlight",
-    href: "/texthighlight",
+    title: "Highlight",
+    href: "/highlight",
     description:
-      "Super simple utility for highlighting certain words in text",
+      "Utility for highlighting certain words in text",
   },
   {
     title: "OCR",
@@ -46,16 +40,10 @@ const components: { title: string; href: string; description: string }[] = [
       "Convert non-searchable PDF documents into searchable and selectable text in seconds",
   },
   {
-    title: "Vehicle",
-    href: "/vehicle",
-    description:
-      "Vehicle renting and gas calculation",
-  },
-  {
-    title: "English Learning Platform",
+    title: "Speech Check",
     href: "/english",
     description:
-      "Speech check, Conversational AI",
+      "Feedback and reports",
   }
 ]
 

@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Send } from "lucide-react"
 import './page.css'
 
-export default function TextHighlight() {
+export default function Highlight() {
   const [inputValue, setInputValue] = useState('');
   const [content, setContent] = useState('');
   const inputRef = useRef(null);
@@ -55,7 +55,7 @@ export default function TextHighlight() {
         <div className='highliter-interface'>
           <Input
             id="message"
-            placeholder="Type your message..."
+            placeholder="Search for a word..."
             className="highliter-input"
             autoComplete="off"
             value={input}

@@ -9,7 +9,7 @@ export default function Home() {
         <Menu />
       </main>
       <div className="coming-soon">
-        <h1>Component AI<span className="dot">.</span></h1>
+        <h1>AI Component<span className="dot">.</span></h1>
         <p>Coming soon</p>
       </div>
     </div>

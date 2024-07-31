@@ -12,7 +12,7 @@ import {
 import { Menu } from "/components/basic/Menu"
 import { Input } from "@/components/ui/input"
 import "./page.css"
-export default function CiteIntention() {
+export default function ChatBot() {
   const [messages, setMessages] = React.useState([
     {
       role: "agent",

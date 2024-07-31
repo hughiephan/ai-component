@@ -4,19 +4,20 @@
   }
   
   .sidebar {
+    margin-left: 500px;
     width: 25%;
     padding: 20px;
-    background-color: #f8f9fa;
   }
   
-  .main-content {
-    width: 50%;
-    padding: 20px;
+  .main-content 
+  {
+    margin-top: 25px;
+    width: 30%;
     background-color: #ffffff;
   }
   
   .performance, .document-types {
-    width: 25%;
+    width: 30%;
     padding: 20px;
     background-color: #f8f9fa;
   }
