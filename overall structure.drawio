@@ -1,0 +1,46 @@
+<mxfile host="Electron" modified="2024-08-05T14:34:35.394Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.4 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="RqLL0iEl1njoTCw5raWF" version="24.6.4" type="device">
+  <diagram name="Page-1" id="L_jQcBzygwHS7dVCGeIs">
+    <mxGraphModel dx="657" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="arGrMD_ZbEJMeMaSYaML-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="yfNEpRg3yUBYpm7agEhn-1" target="arGrMD_ZbEJMeMaSYaML-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_BDqx24SGpCn-TJxoDKo-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="yfNEpRg3yUBYpm7agEhn-1" target="_BDqx24SGpCn-TJxoDKo-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yfNEpRg3yUBYpm7agEhn-1" value="&lt;b&gt;@hughiephan/ai-component&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- facilitate test&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- facilitate lint (biome)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- (nice to have) create component command&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;spacingLeft=5;" parent="1" vertex="1">
+          <mxGeometry x="475" y="360" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yfNEpRg3yUBYpm7agEhn-2" value="packages" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="640" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="arGrMD_ZbEJMeMaSYaML-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="arGrMD_ZbEJMeMaSYaML-3" target="yfNEpRg3yUBYpm7agEhn-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arGrMD_ZbEJMeMaSYaML-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="arGrMD_ZbEJMeMaSYaML-3" target="arGrMD_ZbEJMeMaSYaML-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arGrMD_ZbEJMeMaSYaML-3" value="pnpm-workspace&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- manage monorepo&lt;/span&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;spacingLeft=5;" parent="1" vertex="1">
+          <mxGeometry x="400" y="510" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="arGrMD_ZbEJMeMaSYaML-5" value="apps" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="610" y="640" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="arGrMD_ZbEJMeMaSYaML-6" value="react-storybook" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="arGrMD_ZbEJMeMaSYaML-7" value="react-component" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="arGrMD_ZbEJMeMaSYaML-8" value="styled-system (panda)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_BDqx24SGpCn-TJxoDKo-1" value="turbo&lt;br&gt;- facilitate build" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="580" y="510" width="170" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

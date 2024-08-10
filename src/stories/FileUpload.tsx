@@ -19,10 +19,10 @@ const FileUpload = ({ ratio, onDrop }: FileUploadProps): ReactElement => {
 
   return (
     <div {...getRootProps()} style={{ border: '2px dashed #ccc', padding: '20px', textAlign: 'center' }} className="Container">
-     <AspectRatio.Root ratio={ratio}>
+      <AspectRatio.Root ratio={ratio}>
         <input {...getInputProps()} />
         {/* <button>Upload</button> */}
-        <button
+        <div
           className={css({
             bg: 'red.300',
             fontFamily: 'Inter',
@@ -31,6 +31,9 @@ const FileUpload = ({ ratio, onDrop }: FileUploadProps): ReactElement => {
             borderRadius: 'md',
             _hover: { bg: 'red.400' },
           })}
+        >
+        </div>
+        <button
         >Upload</button>
         <p>Drop Image Here or Click to Upload</p>
       </AspectRatio.Root>
