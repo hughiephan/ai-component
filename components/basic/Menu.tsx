@@ -90,6 +90,13 @@ export function Menu() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="https://drive.google.com/file/d/1_95BZCGgjsrxB0zVRjfKTL7sAahVT0wG/view?usp=sharing" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Team
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   )
