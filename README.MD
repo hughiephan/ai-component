@@ -4,6 +4,12 @@ This project enables students and companies to rapidly create new UI components 
 
 ## Feature request
 
+- Book Store
+
+![img](https://github.com/user-attachments/assets/65582f2e-555b-4d3e-bf30-23434ec5c160)
+
+https://codepen.io/TurkAysenur/pen/JjGKKrP
+
 - Virtual Try On Component
 
 ![img](https://preview.redd.it/idm-vton-virtual-try-on-is-just-another-level-extreme-v0-ra3d6y2tdxwc1.png?width=640&crop=smart&auto=webp&s=42fb826f419cbc0213ba267430dd41aaf73cfda6)
