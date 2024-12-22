@@ -44,6 +44,12 @@ const components: { title: string; href: string; description: string }[] = [
     href: "/english",
     description:
       "Feedback and reports",
+  },
+  {
+    title: "Try On",
+    href: "/tryon",
+    description:
+      "Virtual try-on",
   }
 ]
 

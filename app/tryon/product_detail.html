@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Try-On</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4a90e2;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #357abd;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input {
+            width: 100%;
+        }
+
+        .preview-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .preview {
+            flex: 1;
+            text-align: center;
+        }
+
+        .preview h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .preview img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .sample-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .sample-images img {
+            cursor: pointer;
+            width: 120px; /* Đặt kích thước cho các hình ảnh mẫu */
+            height: auto;
+            border: 2px solid transparent;
+            transition: border-color 0f.3s ease;
+        }
+
+        .sample-images img:hover {
+            border-color: #4a90e2; /* Thay đổi viền khi hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Virtual Try-On</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="model_image">Upload Model Image:</label>
+                <input type="file" name="model_image" accept="image/*"  onchange="previewImage(event, 'model_preview')">
+            </div>
+
+            <div class="form-group">
+                <label for="cloth_image">Upload Cloth Image:</label>
+                <input type="file" name="cloth_image" accept="image/*"  onchange="previewImage(event, 'cloth_preview')">
+            </div>
+            <input type="hidden" id="model_image_url" name="model_image_url">
+            <input type="hidden" id="cloth_image_url" name="cloth_image_url">
+
+
+            <input type="submit" value="Upload and Try-On">
+        </form>
+
+        <div class="sample-images">
+            <div>
+                <h2>Sample Model Images:</h2>
+                <img src="https://fptvton.s3.ap-southeast-2.amazonaws.com/static/model/00135_00.jpg" alt="Sample Model 1" onclick="setSampleImage('model_preview', this.src, 'model_image')">
+                <img src="https://fptvton.s3.ap-southeast-2.amazonaws.com/static/model/00151_00.jpg" alt="Sample Model 2" onclick="setSampleImage('model_preview', this.src, 'model_image')">
+                <img src="https://fptvton.s3.ap-southeast-2.amazonaws.com/static/model/00828_00.jpg" alt="Sample Model 3" onclick="setSampleImage('model_preview', this.src, 'model_image')">
+                <img src="https://fptvton.s3.ap-southeast-2.amazonaws.com/static/model/00991_00.jpg" alt="Sample Model 4" onclick="setSampleImage('model_preview', this.src, 'model_image')">
+                <img src="https://fptvton.s3.ap-southeast-2.amazonaws.com/static/model/a.jpg" alt="Sample Model 5" onclick="setSampleImage('model_preview', this.src, 'model_image')">
+                <img src="https://fptvton.s3.ap-southeast-2.amazonaws.com/static/model/b.jpg" alt="Sample Model 6" onclick="setSampleImage('model_preview', this.src, 'model_image')">
+                <img src="https://fptvton.s3.ap-southeast-2.amazonaws.com/static/model/c.JPG" alt="Sample Model 5" onclick="setSampleImage('model_preview', this.src, 'model_image')">
+                <img src="https://fptvton.s3.ap-southeast-2.amazonaws.com/static/model/d.JPG" alt="Sample Model 6" onclick="setSampleImage('model_preview', this.src, 'model_image')">
+                <img src="https://fptvton.s3.ap-southeast-2.amazonaws.com/static/model/e.JPG" alt="Sample Model 6" onclick="setSampleImage('model_preview', this.src, 'model_image')">
+
+
+            </div>
+            <div>
+                <h2> T-shirt image </h2>
+                    <img src="{{ product.image }}" alt="{{ product.name }}" style="width: 320px;"  onclick="setSampleImage('cloth_preview', this.src, 'cloth_image')">
+            </div>
+        </div>
+
+        <div class="preview-section">
+            <div class="preview">
+                <h2>Model Image Preview:</h2>
+                <img id="model_preview" src="https://fptvton.s3.ap-southeast-2.amazonaws.com/white.jpg" alt="Model Image Preview" />
+            </div>
+
+            <div class="preview">
+                <h2>Cloth Image Preview:</h2>
+                <img id="cloth_preview" src="https://fptvton.s3.ap-southeast-2.amazonaws.com/white.jpg" alt="Cloth Image Preview" />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function previewImage(event, previewId) {
+            const reader = new FileReader();
+            reader.onload = function() {
+                const output = document.getElementById(previewId);
+                output.src = reader.result;
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+
+        function setSampleImage(previewId, src, inputName) {
+            const output = document.getElementById(previewId);
+            output.src = src;
+
+            // Thay vì tạo blob, chỉ cần đặt URL vào input hidden
+            if (inputName === 'model_image') {
+                document.getElementById('model_image_url').value = src;
+            } else if (inputName === 'cloth_image') {
+                document.getElementById('cloth_image_url').value = src;
+            }
+        }
+    </script>
+
+</body>
+</html>
