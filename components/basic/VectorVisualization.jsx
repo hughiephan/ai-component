@@ -8,13 +8,7 @@ const VectorVisualization = () => {
     w: { x: 3, y: 1, z: -3 },
     vw: { x: 2, y: 3, z: -1 }
   });
-  const [showBoxes, setShowBoxes] = useState({
-    v: true,
-    w: false,
-    vw: false
-  });
-  const [isPerspective, setIsPerspective] = useState(true);
-  
+
   const sceneRef = useRef(null);
   const rendererRef = useRef(null);
   const cameraRef = useRef(null);
@@ -28,7 +22,7 @@ const VectorVisualization = () => {
     if (rendererRef.current && sceneRef.current) {
       rendererRef.current.render(
         sceneRef.current,
-        isPerspective ? cameraRef.current : orthographicRef.current
+        cameraRef.current
       );
     }
   };
@@ -58,9 +52,9 @@ const VectorVisualization = () => {
     // Update boxes
     const { vBox, wBox, vwBox } = boxHelpersRef.current;
     if (vBox && wBox && vwBox) {
-      vBox.visible = showBoxes.v;
-      wBox.visible = showBoxes.w;
-      vwBox.visible = showBoxes.vw;
+      vBox.visible = true;
+      wBox.visible = false;
+      vwBox.visible = false;
     }
     
     // Update anchors
@@ -78,6 +72,7 @@ const VectorVisualization = () => {
     // Initialize Three.js scene
     const initScene = () => {
       const scene = new THREE.Scene();
+      scene.background = new THREE.Color(0xffffff); // Set background color to white
       sceneRef.current = scene;
       
       // Create renderer
@@ -221,8 +216,8 @@ const VectorVisualization = () => {
   
   useEffect(() => {
     updateVectors();
-  }, [vectors, showBoxes, isPerspective]);
-  
+  }, [vectors]);
+
   const handleVectorChange = (vectorName, component, value) => {
     setVectors(prev => ({
       ...prev,
@@ -288,48 +283,6 @@ const VectorVisualization = () => {
             />
           ))}
         </div>
-      </div>
-      
-      <div className="flex gap-4 mt-4">
-        <label className="flex items-center gap-2">
-          <input
-            type="checkbox"
-            checked={isPerspective}
-            onChange={e => setIsPerspective(e.target.checked)}
-            className="w-5 h-5"
-          />
-          Perspective
-        </label>
-        
-        <label className="flex items-center gap-2">
-          <input
-            type="checkbox"
-            checked={showBoxes.v}
-            onChange={e => setShowBoxes(prev => ({ ...prev, v: e.target.checked }))}
-            className="w-5 h-5"
-          />
-          Show v box
-        </label>
-        
-        <label className="flex items-center gap-2">
-          <input
-            type="checkbox"
-            checked={showBoxes.w}
-            onChange={e => setShowBoxes(prev => ({ ...prev, w: e.target.checked }))}
-            className="w-5 h-5"
-          />
-          Show w box
-        </label>
-        
-        <label className="flex items-center gap-2">
-          <input
-            type="checkbox"
-            checked={showBoxes.vw}
-            onChange={e => setShowBoxes(prev => ({ ...prev, vw: e.target.checked }))}
-            className="w-5 h-5"
-          />
-          Show v+w box
-        </label>
       </div>
     </div>
   );
