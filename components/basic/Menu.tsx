@@ -50,6 +50,12 @@ const components: { title: string; href: string; description: string }[] = [
     href: "/tryon",
     description:
       "Virtual try-on",
+  },
+  {
+    title: "Gaze",
+    href: "/gaze",
+    description:
+      "Driver gaze",
   }
 ]
 
